@@ -1,31 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
-    <style>
-      body {
-        text-align: center;
-      }
-      div.container {
-        width: 400px;
-        margin: 10px auto;
-        border: 2px solid #e3e3e3;
-        padding: 10px;
-      }
+     <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>{{ title }}</title>
+          <link rel="stylesheet" href="base.css" />
+          <style>
+               body {
+                    text-align: center;
+               }
+               li {
+                    list-style: none;
+                    /* padding: 5px; */
+                    background-color: #e3e3e398;
+                    border: 5px solid white;
+               }
 
-      .love {
-        font-size: 4em;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <a href="/">Your page</a>
-      |
-      <a href="/about">About this page of yours</a>
-    </header>
-    {{ content | safe }}
-  </body>
+               li a {
+                    text-decoration: none;
+               }
+
+               div.container {
+                    width: 400px;
+                    margin: 10px auto;
+                    border: 2px solid #e3e3e3;
+                    padding: 10px;
+               }
+
+               .love {
+                    font-size: 4em;
+               }
+          </style>
+     </head>
+     <body>
+          <header>
+               <a href="/">Your page</a>
+               |
+               <a href="/about">About this page of yours</a>
+          </header>
+          {{ content | safe }}
+     </body>
 </html>

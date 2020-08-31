@@ -12,18 +12,20 @@ layout: base.njk
   <ul>
     {% for article in news.articles %}
       <li>
-        <h4>
+        <p style="font-size:25px;">
           <a href='{{article.url}}'>
-            {{article.title}}} <a/>
-            <h4/>
-            <span>
+            {{article.title}}} 
+          <a/>
+        <p/>
+        <img src="{{article.urlToImage}}" width="100%" />
+        <span>
               {{article.source.name}} - <time>
                 {{article.publishedAt}}
                 <time/>
-                <span/>
-                <li/>
-              {% endfor %}
+        <span/>
+        <li/>
+       {% endfor %}
 
-          </ul>
-        </div>
+  </ul>
+</div>
         <script src="/js/vibe.js"></script>
